@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet, Dimensions, KeyboardAvoidingView } from 'react-native';
-// import { ThemeProvider } from 'react-native-elements';
 import { AsyncStorage } from "react-native"
 import { Actions } from 'react-native-router-flux';
 import { Card, CardSection, Input, Button, Spinner } from './common';
-// import Icon from 'react-native-vector-icons/FontAwesome';
 import axios from 'axios';
 import * as COLOR from './common/Colors';
 import * as CON from './Cons'
@@ -15,8 +13,8 @@ class LoginForm extends Component {
   constructor() {
     super();
     this.state = {
-      'username': 'user1',
-      'password': '123123asd',
+      'username': '',
+      'password': '',
       'loading': false,
       'error': '',
     };
